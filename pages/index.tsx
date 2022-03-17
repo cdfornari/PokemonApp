@@ -29,7 +29,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const pokemons: Pokemon[] = data.results.map( (pokemon,i) => ({
     ...pokemon,
     id: i+1,
-    img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${ i+1 }.svg`
+    img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${ i+1 }.png`
   }))
 
   return {
