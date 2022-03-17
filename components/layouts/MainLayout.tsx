@@ -19,6 +19,7 @@ export const MainLayout: FC<Props> = ({children,title}) => {
             <meta property="og:title" content={`${title}`} />
             <meta property="og:description" content={`Información sobre ${title}`} />
             <meta property="og:image" content={`${origin}/banner.png`} />
+            <meta property="og:image:secure_url" content={`${origin}/banner.png`} />
         </Head>
         <Navbar />
         <main style={{
